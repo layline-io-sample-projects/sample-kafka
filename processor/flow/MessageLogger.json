@@ -1,0 +1,31 @@
+{
+  "@type" : "processorFlow/javaScript",
+  "assetClass" : "processorFlow",
+  "assetType" : "javaScript",
+  "uuid" : "8eeb2520-bb77-4ed3-a420-dcbe86487805",
+  "checksum" : "150a101b1492126fec3794e831754ba82197c66458fbb8e1fbe49a4ae1ca67dd",
+  "name" : "MessageLogger",
+  "inputPorts" : [
+    {
+      "modifier" : "add",
+      "uuid" : "985f1e4f-fb7c-464b-98fb-f042ccca3c7a",
+      "name" : "Input-1",
+      "description" : null
+    }
+  ],
+  "outputPorts" : [
+    {
+      "modifier" : "add",
+      "uuid" : "76ec2f79-8677-470b-8de5-921339755869",
+      "name" : "Output-1",
+      "description" : null
+    }
+  ],
+  "failureHandling" : { },
+  "scriptLines" : [
+    "function onMessage(message) {",
+    "    stream.logInfo(message.toJson());",
+    "}"
+  ],
+  "isInstance" : true
+}

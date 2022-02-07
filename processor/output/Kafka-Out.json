@@ -1,0 +1,28 @@
+{
+  "@type" : "processorOutput/kafka",
+  "assetClass" : "processorOutput",
+  "assetType" : "kafka",
+  "uuid" : "138dcc43-f7cc-49ff-9253-44082b3225d1",
+  "checksum" : "3419fcdda63378272b3670f0bf9b053330d6f38ed2a44ee0e3bf0dad5ca8944a",
+  "name" : "Kafka-Out",
+  "inputPorts" : [
+    {
+      "modifier" : "add",
+      "uuid" : "fcca9bdc-8126-4295-b030-ad712bdd7529",
+      "name" : "Input-1",
+      "description" : null
+    }
+  ],
+  "failureHandling" : { },
+  "sinkUuid" : "559bed81-0dfc-4f71-a3f5-ab38dff0c6de",
+  "formatUuid" : "e511ac65-c5e3-436e-9b93-c79f2936d7e8",
+  "routing" : {
+    "@type" : "processorOutput/kafka/routing/table",
+    "noMatchHandling" : "DEFAULT",
+    "defaultDestination" : {
+      "topic" : "\"rpe8sfqa-default\""
+    },
+    "routingRules" : [ ]
+  },
+  "isInstance" : false
+}

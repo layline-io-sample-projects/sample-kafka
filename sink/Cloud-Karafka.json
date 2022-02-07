@@ -1,0 +1,30 @@
+{
+  "@type" : "sink/kafka",
+  "assetClass" : "sink",
+  "assetType" : "kafka",
+  "uuid" : "559bed81-0dfc-4f71-a3f5-ab38dff0c6de",
+  "checksum" : "cd47ceef31225e4cbc0ad12ce21bd7d8e2b4fc3f26b1cd56ba34403785273724",
+  "name" : "Cloud-Karafka",
+  "bootstrapServers" : "sulky-01.srvs.cloudkafka.com:9094,sulky-02.srvs.cloudkafka.com:9094,sulky-03.srvs.cloudkafka.com:9094",
+  "parallelism" : 1,
+  "communication" : {
+    "useSsl" : true,
+    "truststoreLocation" : null,
+    "truststorePasswordSecret" : null,
+    "keystoreLocation" : null,
+    "keystorePasswordSecret" : null,
+    "keyPasswordSecret" : null
+  },
+  "authentication" : {
+    "@type" : "kafka/authentication/sasl_scram",
+    "credentials" : {
+      "@type" : "credentials/userPassword",
+      "userName" : "rpe8sfqa",
+      "passwordMode" : "SUBSTITUTE",
+      "password" : "KZz72ulcW6K58wvPUZcYrV6wXoFeFAlT"
+    }
+  },
+  "properties" : {
+    "properties" : null
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "@type" : "workflow",
+  "assetClass" : "workflow",
+  "assetType" : "workflow",
+  "uuid" : "3f14ae50-25f0-4f8e-8f21-bc2992843ed8",
+  "checksum" : "1fb6d10dce177c8a69cf0774fd16f024ee0fec5359d54026790a71d4ff6e817d",
+  "name" : "MessageMapping",
+  "weight" : 100,
+  "processorInput" : {
+    "modifier" : "add",
+    "uuid" : "09bcb9c9-94c7-4c6b-8fad-f0c541b7d012",
+    "ref" : "9c86386e-9fbc-4370-8ce7-fea87797e761",
+    "loc" : {
+      "x" : 210.0,
+      "y" : 141.0
+    },
+    "links" : [
+      {
+        "modifier" : "add",
+        "uuid" : "caee2439-26f9-4729-80f5-d66ed2a63ff3",
+        "name" : "Kafk... -> Mess...",
+        "sourcePort" : "d3248a01-3f75-4902-94f8-3fd626103bdd",
+        "destNode" : "1d991f73-ee08-42f0-bd3d-eff56adb61c8",
+        "destPort" : "985f1e4f-fb7c-464b-98fb-f042ccca3c7a"
+      }
+    ]
+  },
+  "processors" : [
+    {
+      "modifier" : "add",
+      "uuid" : "1d991f73-ee08-42f0-bd3d-eff56adb61c8",
+      "ref" : "8eeb2520-bb77-4ed3-a420-dcbe86487805",
+      "loc" : {
+        "x" : 486.2025000000001,
+        "y" : 143.4297375
+      },
+      "links" : [
+        {
+          "modifier" : "add",
+          "uuid" : "21f77c3a-124d-47c3-8d88-efb9e7419a38",
+          "name" : "Mess... -> DevN...",
+          "sourcePort" : "76ec2f79-8677-470b-8de5-921339755869",
+          "destNode" : "200d9c4b-5d4f-4d72-b988-a76716b4bd74",
+          "destPort" : "3c459fe1-dc1b-42bc-9d4b-8cddc4ea97c3"
+        }
+      ]
+    },
+    {
+      "modifier" : "add",
+      "uuid" : "200d9c4b-5d4f-4d72-b988-a76716b4bd74",
+      "ref" : "fae0a109-1ec9-4f9d-90c4-601e8af390ca",
+      "loc" : {
+        "x" : 813.1736812500002,
+        "y" : 143.4297375
+      },
+      "links" : null
+    }
+  ]
+}

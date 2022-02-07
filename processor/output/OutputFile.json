@@ -1,0 +1,33 @@
+{
+  "@type" : "processorOutput/stream",
+  "assetClass" : "processorOutput",
+  "assetType" : "stream",
+  "uuid" : "74571f50-0015-4a9c-a147-319f9325d409",
+  "checksum" : "74fb34c571dbabdb5e57e63b487710998eabbab7b8f3d2ae262f1987412ae5da",
+  "name" : "OutputFile",
+  "description" : "Writing the mapped file.",
+  "inputPorts" : [
+    {
+      "modifier" : "add",
+      "uuid" : "303415b6-c172-4270-8998-b69945744721",
+      "name" : "Input-1",
+      "description" : null
+    }
+  ],
+  "failureHandling" : {
+    "streamRetry" : {
+      "maxRetries" : 1,
+      "minBackoff" : 0,
+      "maxBackoff" : null
+    },
+    "eventRetry" : {
+      "maxRetries" : 1,
+      "minBackoff" : 0,
+      "maxBackoff" : null,
+      "retryFailedHandling" : null
+    }
+  },
+  "sinkUuid" : "0ffac146-0107-4351-8e82-78fa8a576b4d",
+  "formatUuid" : "e511ac65-c5e3-436e-9b93-c79f2936d7e8",
+  "isInstance" : false
+}

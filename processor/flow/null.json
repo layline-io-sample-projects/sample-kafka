@@ -1,0 +1,25 @@
+{
+  "@type" : "processorFlow/mapping",
+  "assetClass" : "processorFlow",
+  "assetType" : "mapping",
+  "uuid" : "30f18951-4517-43e4-8a5b-bb4663daca02",
+  "checksum" : "c7537182226923fb1b90f7fb02b534c933b6a3047be9c5c1e5760a8931688d9c",
+  "baseUuid" : "a9e45323-6a5f-4cf3-9fc9-9b30219e1bfd",
+  "inputPorts" : [
+    {
+      "modifier" : "add",
+      "uuid" : "d83b4f72-273b-46b2-ad87-a18378225f31",
+      "name" : null,
+      "description" : null
+    }
+  ],
+  "outputPorts" : [
+    {
+      "modifier" : "add",
+      "uuid" : "f5ee00f0-df38-4f8e-9a61-826676e25c84",
+      "name" : null,
+      "description" : null
+    }
+  ],
+  "isInstance" : true
+}

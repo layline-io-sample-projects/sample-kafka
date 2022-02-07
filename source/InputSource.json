@@ -1,0 +1,22 @@
+{
+  "@type" : "source/fileSystem",
+  "assetClass" : "source",
+  "assetType" : "fileSystem",
+  "uuid" : "ac435991-7df7-498c-91c3-045e101d9d4e",
+  "checksum" : "2f71bd9726cc2daa19080f1fcd93151afa351e409ea98f9918fe1c08d5b31763",
+  "name" : "InputSource",
+  "pollingConfig" : {
+    "@type" : "source/pollable/polling/fixedRate",
+    "pollTimeout" : "60",
+    "ordering" : "ALPHABETICAL_ASC",
+    "interval" : "15"
+  },
+  "inputDirectory" : "${lay:dirIn}",
+  "doneDirectory" : "${lay:dirDone}",
+  "errorDirectory" : "${lay:dirError}",
+  "fileFilter" : {
+    "filterRegExpr" : ".+\\.csv",
+    "prefixRegExpr" : null,
+    "suffixRegExpr" : null
+  }
+}

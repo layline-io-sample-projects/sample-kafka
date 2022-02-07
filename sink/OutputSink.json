@@ -1,0 +1,13 @@
+{
+  "@type" : "sink/fileSystem",
+  "assetClass" : "sink",
+  "assetType" : "fileSystem",
+  "uuid" : "0ffac146-0107-4351-8e82-78fa8a576b4d",
+  "checksum" : "607075c79895c50e1f13119b64a4c81824a2b5a346f44a28fc9f99cc8c98e255",
+  "name" : "OutputSink",
+  "outputDirectory" : "${lay:dirOut}",
+  "outputPrefix" : "out_",
+  "tempDirectory" : "${lay:dirOut}",
+  "tempPrefix" : "tmp_",
+  "errorDirectory" : "${lay:dirError}"
+}

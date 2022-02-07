@@ -1,0 +1,25 @@
+{
+  "@type" : "processorInput/kafka",
+  "assetClass" : "processorInput",
+  "assetType" : "kafka",
+  "uuid" : "9c86386e-9fbc-4370-8ce7-fea87797e761",
+  "checksum" : "68030eaa174ad316111226b87ca5a0e3c9b24c931a2efe129a74f8a12c11a8b9",
+  "name" : "KafkaInput",
+  "outputPort" : {
+    "modifier" : "add",
+    "uuid" : "d3248a01-3f75-4902-94f8-3fd626103bdd",
+    "name" : "Output-1",
+    "description" : null
+  },
+  "sourceUuid" : "bbe68a3c-49e0-40c5-b748-7c8f530d465e",
+  "formatUuid" : "902ff2fa-5d8d-4930-8806-419310a60a0b",
+  "autoOffsetReset" : "earliest",
+  "topics" : [
+    {
+      "modifier" : "add",
+      "uuid" : "dc259350-f4de-4aa4-a989-0611c71f8394",
+      "data" : "rpe8sfqa-default"
+    }
+  ],
+  "isInstance" : true
+}

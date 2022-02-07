@@ -1,0 +1,35 @@
+{
+  "@type" : "deploy/engineConfig",
+  "assetClass" : "deploy",
+  "assetType" : "engineConfig",
+  "uuid" : "9cf2a075-069f-4744-bb36-5d1793d8af15",
+  "checksum" : "766d0446c6cb824377aa05b96c676ee26db13b2f51e29086ac13f7a2ea63de24",
+  "name" : "Local-Cluster",
+  "tag" : "tut-kafka-${build:timestamp}",
+  "workflows" : [
+    {
+      "modifier" : "add",
+      "uuid" : "80825de6-93c9-42e9-892f-6ac044965df7",
+      "uuidRef" : "39f0c6f3-132a-4f89-99a8-6442a9716888"
+    }
+  ],
+  "environments" : [
+    {
+      "modifier" : "add",
+      "uuid" : "2f1c5a00-1985-4bd7-a9b9-0e9416537891",
+      "uuidRef" : "d2ebe8df-6081-41a3-9a4c-75b52dd511a7"
+    }
+  ],
+  "secretTargetKeys" : [
+    {
+      "modifier" : "add",
+      "uuid" : "9042bbaf-04ec-4a47-83ff-0b19fe412ce6",
+      "key" : {
+        "name" : "DefaultKey",
+        "description" : "Automatically created default key",
+        "fingerprint" : "/oatI1pcSlnMsg49rOISC9q2VUQrhg95JRCs8RbI6ZU=",
+        "encoded" : "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA13ZcjZgiwKpFbLKbKwNG\nlO67d1NvNoFMvDYkwCtqEHuzvi7AWVJb5bCygbA/NJUqcPWdDvCFQgTCz2y3TK49\nsF7jU6zEPnyKaQWU/K0DJPLpi+kq6vbXtER8wh5hrbLmvy/gbv5+JxJHoQR2IzD7\nt40/5arD5qLObivC34oFVurwZOZoVL7iVlBZZxkICDJMuz/o6NFV34Dq1cN20QAk\n8xC2QHFAbMB21RiuJbsNrsiYSOFDh5wM30gX/wIuWZMWELitN5WYslemXzlIWEg/\nj0FFEuTeyVhcpGHTSqXUVdN7gB5rDS5wZyeh6PMFnUSO3wFWsbFX6B4tYA24Nt6U\nHwIDAQAB\n-----END PUBLIC KEY-----\n"
+      }
+    }
+  ]
+}

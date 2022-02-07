@@ -1,0 +1,59 @@
+{
+  "@type" : "workflow",
+  "assetClass" : "workflow",
+  "assetType" : "workflow",
+  "uuid" : "39f0c6f3-132a-4f89-99a8-6442a9716888",
+  "checksum" : "d4b503241c5aca0ade1bd79ce8028bf242fdefcb72473f1554338eb4c143a974",
+  "name" : "File-To-Kafka",
+  "description" : "A simple file-mapping workflow.",
+  "processorInput" : {
+    "modifier" : "add",
+    "uuid" : "db6370f4-2904-4811-b01d-f8114b03d57b",
+    "ref" : "695c64c2-36db-4b3b-870b-6c2df2ce7a24",
+    "loc" : {
+      "x" : 0.0,
+      "y" : 0.0
+    },
+    "links" : [
+      {
+        "modifier" : "add",
+        "uuid" : "3fde92ea-63e3-4778-8abe-444730f5e89d",
+        "name" : "Inpu... -> Mapp...",
+        "sourcePort" : "dae2f11f-471e-4cd4-a366-3eda080318bf",
+        "destNode" : "3c849a5e-2737-4c56-a625-8c8dbf9c1aa1",
+        "destPort" : "d83b4f72-273b-46b2-ad87-a18378225f31"
+      }
+    ]
+  },
+  "processors" : [
+    {
+      "modifier" : "add",
+      "uuid" : "3c849a5e-2737-4c56-a625-8c8dbf9c1aa1",
+      "ref" : "30f18951-4517-43e4-8a5b-bb4663daca02",
+      "loc" : {
+        "x" : 274.634765625,
+        "y" : 0.0
+      },
+      "links" : [
+        {
+          "modifier" : "add",
+          "uuid" : "7d55a724-9f31-46ef-b27c-9992ac5340a8",
+          "name" : "Mapp... -> Kafk...",
+          "sourcePort" : "f5ee00f0-df38-4f8e-9a61-826676e25c84",
+          "destNode" : "4345d2ea-c497-4419-b159-c07e4aed5ade",
+          "destPort" : "fcca9bdc-8126-4295-b030-ad712bdd7529"
+        }
+      ]
+    },
+    {
+      "modifier" : "add",
+      "uuid" : "4345d2ea-c497-4419-b159-c07e4aed5ade",
+      "ref" : "266fcb97-0040-41aa-85ad-fd0a9805ec3b",
+      "loc" : {
+        "x" : 549.685546875,
+        "y" : 0.0
+      },
+      "links" : null
+    }
+  ]
+}

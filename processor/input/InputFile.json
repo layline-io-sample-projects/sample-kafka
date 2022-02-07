@@ -1,0 +1,31 @@
+{
+  "@type" : "processorInput/stream",
+  "assetClass" : "processorInput",
+  "assetType" : "stream",
+  "uuid" : "695c64c2-36db-4b3b-870b-6c2df2ce7a24",
+  "checksum" : "f692dda3be9694b46acaee60bd82f6974d42039b084ce29dd503315f20ab00d2",
+  "name" : "InputFile",
+  "description" : "Reading the original file",
+  "outputPort" : {
+    "modifier" : "add",
+    "uuid" : "dae2f11f-471e-4cd4-a366-3eda080318bf",
+    "name" : "Output -1",
+    "description" : null
+  },
+  "failureHandling" : {
+    "streamRetry" : {
+      "maxRetries" : 1,
+      "minBackoff" : 0,
+      "maxBackoff" : null
+    },
+    "eventRetry" : {
+      "maxRetries" : 1,
+      "minBackoff" : 0,
+      "maxBackoff" : null,
+      "retryFailedHandling" : null
+    }
+  },
+  "sourceUuid" : "ac435991-7df7-498c-91c3-045e101d9d4e",
+  "formatUuid" : "e511ac65-c5e3-436e-9b93-c79f2936d7e8",
+  "isInstance" : true
+}

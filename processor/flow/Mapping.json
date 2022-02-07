@@ -1,0 +1,164 @@
+{
+  "@type" : "processorFlow/mapping",
+  "assetClass" : "processorFlow",
+  "assetType" : "mapping",
+  "uuid" : "a9e45323-6a5f-4cf3-9fc9-9b30219e1bfd",
+  "checksum" : "1de13fd6c7312204ada666b211591894018eedb6143ba52167c8a5f84b8359a8",
+  "name" : "Mapping",
+  "description" : "Mapping the file content",
+  "resources" : [
+    {
+      "modifier" : "add",
+      "uuid" : "6a1bbcae-c3c3-4932-b91c-37d361208084",
+      "data" : "e511ac65-c5e3-436e-9b93-c79f2936d7e8"
+    }
+  ],
+  "inputPorts" : [
+    {
+      "modifier" : "add",
+      "uuid" : "d83b4f72-273b-46b2-ad87-a18378225f31",
+      "name" : "Input-1",
+      "description" : null
+    }
+  ],
+  "outputPorts" : [
+    {
+      "modifier" : "add",
+      "uuid" : "f5ee00f0-df38-4f8e-9a61-826676e25c84",
+      "name" : "Output-1",
+      "description" : null
+    }
+  ],
+  "failureHandling" : { },
+  "scenarios" : [
+    {
+      "uuid" : "d57897d8-0643-4c98-abcf-eb32e2de081e",
+      "modifier" : "add",
+      "name" : "Header Mapping",
+      "description" : null,
+      "sourceMessageAccessor" : "Header",
+      "condition" : {
+        "conditionMode" : "NONE",
+        "conditions" : null
+      },
+      "forwardOriginalMessage" : true,
+      "updateOriginalMessage" : true,
+      "updateInstanceName" : null,
+      "steps" : [
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "d2f1621c-ab58-4e93-8533-415b899e9943",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.RECORD_TYPE",
+          "sourceScript" : "source.BT_IN.RECORD_TYPE"
+        },
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "00356fb9-a98c-49f9-8c8b-36f87f388adf",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.FILENAME",
+          "sourceScript" : "source.BT_IN.FILENAME"
+        }
+      ]
+    },
+    {
+      "uuid" : "9f5cf252-9ced-4cfb-9a49-313997571807",
+      "modifier" : "add",
+      "name" : "Detail Mapping",
+      "description" : null,
+      "sourceMessageAccessor" : "Detail",
+      "condition" : {
+        "conditionMode" : "NONE",
+        "conditions" : null
+      },
+      "forwardOriginalMessage" : true,
+      "updateOriginalMessage" : true,
+      "updateInstanceName" : null,
+      "steps" : [
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "d7243063-7c0a-44a9-8137-9ed391c1e5b7",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.RECORD_TYPE",
+          "sourceScript" : "source.BT_IN.RECORD_TYPE"
+        },
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "80b780c2-e9ad-4782-a366-503758e88d13",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.DATE",
+          "sourceScript" : "source.BT_IN.DATE"
+        },
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "cb4f4716-27e0-46a2-9164-727df3a7ebe3",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.DESCRIPTION",
+          "sourceScript" : "source.BT_IN.DESCRIPTION"
+        },
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "5c9fe1c6-1a15-4c46-8b09-2cb167668d75",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.DEPOSITS",
+          "sourceScript" : "source.BT_IN.DEPOSITS"
+        },
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "fe1d590e-580d-439e-954d-69e7a1941b24",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.WITHDRAWALS",
+          "sourceScript" : "source.BT_IN.WITHDRAWALS"
+        },
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "6683a7f8-601a-4b63-a7ec-d79f7a297645",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.BALANCE",
+          "sourceScript" : "source.BT_IN.BALANCE"
+        }
+      ]
+    },
+    {
+      "uuid" : "c947a044-518c-4a8f-932d-af1686c5a574",
+      "modifier" : "add",
+      "name" : "Trailer Mapping",
+      "description" : null,
+      "sourceMessageAccessor" : "Trailer",
+      "condition" : {
+        "conditionMode" : "NONE",
+        "conditions" : null
+      },
+      "forwardOriginalMessage" : true,
+      "updateOriginalMessage" : true,
+      "updateInstanceName" : null,
+      "steps" : [
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "af40f16e-d0a7-40bb-90a3-8112387e8bab",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.RECORD_TYPE",
+          "sourceScript" : "source.BT_IN.RECORD_TYPE"
+        },
+        {
+          "@type" : "processorFlow/mapping/step/simple",
+          "uuid" : "9637cf14-a8ac-465e-b25a-72b416575495",
+          "modifier" : "add",
+          "description" : null,
+          "targetPath" : "target.BT_OUT.RECORD_COUNT",
+          "sourceScript" : "source.BT_IN.RECORD_COUNT"
+        }
+      ]
+    }
+  ],
+  "isInstance" : false
+}

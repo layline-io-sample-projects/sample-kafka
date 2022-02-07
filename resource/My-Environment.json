@@ -1,0 +1,15 @@
+{
+  "@type" : "resource/environment",
+  "assetClass" : "resource",
+  "assetType" : "environment",
+  "uuid" : "d2ebe8df-6081-41a3-9a4c-75b52dd511a7",
+  "checksum" : "57f771c374022b47ab88c2d7cb5dbd3b630bc86c2ccffbde2beff676d997700a",
+  "name" : "My-Environment",
+  "description" : "These are the global environment settings",
+  "environment" : {
+    "dirDone" : "/Users/andrew/data/done",
+    "dirError" : "/Users/andrew/data/error",
+    "dirIn" : "/Users/andrew/data/in",
+    "dirOut" : "/Users/andrew/data/out"
+  }
+}

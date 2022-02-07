@@ -1,0 +1,18 @@
+{
+  "@type" : "processorOutput/devNull",
+  "assetClass" : "processorOutput",
+  "assetType" : "devNull",
+  "uuid" : "fae0a109-1ec9-4f9d-90c4-601e8af390ca",
+  "checksum" : "5487f955bab6b62a8a56d284bc976150859cc75b0b040c474bd4b85796c67448",
+  "name" : "DevNull",
+  "inputPorts" : [
+    {
+      "modifier" : "add",
+      "uuid" : "3c459fe1-dc1b-42bc-9d4b-8cddc4ea97c3",
+      "name" : "Input-1",
+      "description" : null
+    }
+  ],
+  "failureHandling" : { },
+  "isInstance" : true
+}
