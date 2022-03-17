@@ -3,25 +3,9 @@
   "assetClass" : "source",
   "assetType" : "kafka",
   "uuid" : "bbe68a3c-49e0-40c5-b748-7c8f530d465e",
-  "checksum" : "08fd6e9c396f8e781a7eb796d40771b917bea7a0baba57a84c92494505f2fdc8",
+  "checksum" : "48d2e10964af0135a92661c95fb43bab4cf0b3a549ff979ca8ae5245875bd73e",
   "name" : "Cloud-Karafka",
-  "bootstrapServers" : "sulky-01.srvs.cloudkafka.com:9094,sulky-02.srvs.cloudkafka.com:9094,sulky-03.srvs.cloudkafka.com:9094",
-  "communication" : {
-    "useSsl" : true,
-    "truststoreLocation" : null,
-    "truststorePasswordSecret" : null,
-    "keystoreLocation" : null,
-    "keystorePasswordSecret" : null,
-    "keyPasswordSecret" : null
-  },
-  "authentication" : {
-    "@type" : "kafka/authentication/sasl_scram",
-    "credentials" : {
-      "@type" : "credentials/userSecret",
-      "userName" : "rpe8sfqa",
-      "secret" : "CloudKarafkaPassword"
-    }
-  },
+  "connection" : "d9a00999-8f19-4b3c-9f12-18c6e3f9c550",
   "properties" : {
     "properties" : null
   }

@@ -1,0 +1,19 @@
+{
+  "@type" : "connection/kafka",
+  "assetClass" : "connection",
+  "assetType" : "kafka",
+  "uuid" : "d9a00999-8f19-4b3c-9f12-18c6e3f9c550",
+  "checksum" : "14b07cf55c22728c8da58223aec0dbfb5b894a4f312bae213afa5ba039f2b50f",
+  "name" : "Cloud-Karafka-Connection",
+  "bootstrapServers" : "sulky-01.srvs.cloudkafka.com:9094, sulky-02.srvs.cloudkafka.com:9094, sulky-03.srvs.cloudkafka.com:9094",
+  "useSsl" : true,
+  "authentication" : {
+    "@type" : "kafka/authentication/sasl_scram",
+    "credentials" : {
+      "@type" : "credentials/userPassword",
+      "userName" : "rpe8sfqa",
+      "passwordMode" : null,
+      "password" : "KZz72ulcW6K58wvPUZcYrV6wXoFeFAlT"
+    }
+  }
+}

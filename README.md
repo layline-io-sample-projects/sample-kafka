@@ -16,7 +16,7 @@ A sample file to read from is provided. Kafka is written to Cloud Karafka (free 
 
 ### Dependencies
 
-* layline.io v0.9 or higher. Download [here](https://layline.io/download).
+* layline.io v0.9.0 or higher. Download [here](https://layline.io/download).
 * supported OS (Windows, macOS, linux)
 
 ### Installing
@@ -38,7 +38,9 @@ If you need help with this Project, please [contact us](mailto:support@layline.i
 ## Version History
 
 * 0.1
-    * Initial Release
+  * Initial Release
+* 0.2
+  * Adaptation to new connection model
 
 ## License
 
@@ -47,6 +49,7 @@ See the `license.txt` file  for details.
 
 ## More Resources
 
+* [Blog explainer for this Project](http://localhost:3000/blog/2022-03-21)
 * [layline.io Documentation](https://doc.layline.io)
 * [Getting Started](https://doc.layline.io/quickstart/)
 * [Importing a Project](https://doc.layline.io/doc/wf-config/configuration.html#importing-a-project-directory)
