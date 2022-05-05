@@ -7,9 +7,9 @@
   "name" : "My-Environment",
   "description" : "These are the global environment settings",
   "environment" : {
-    "dirDone" : "/Users/andrew/data/done",
-    "dirError" : "/Users/andrew/data/error",
-    "dirIn" : "/Users/andrew/data/in",
-    "dirOut" : "/Users/andrew/data/out"
+    "dirDone" : "/home/layline/layline-data/done",
+    "dirError" : "/home/layline/layline-data/error",
+    "dirIn" : "/home/layline/layline-data/in",
+    "dirOut" : "/home/layline/layline-data/out"
   }
 }
