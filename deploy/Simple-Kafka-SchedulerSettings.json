@@ -1,0 +1,30 @@
+{
+  "@type" : "deploy/schedulerSettings",
+  "assetClass" : "deploy",
+  "assetType" : "schedulerSettings",
+  "uuid" : "f15bf757-da5c-470c-82f5-b82e0fd24d24",
+  "checksum" : "5cf08e054d583c772e04e68e635444173c9db41be3a9f906682a1b5c462c40ce",
+  "name" : "Simple-Kafka-SchedulerSettings",
+  "workflows" : [
+    {
+      "uuid" : "06a2207a-696a-40bb-8570-c0289bd79a1d",
+      "modifier" : "add",
+      "workflowUuid" : "3f14ae50-25f0-4f8e-8f21-bc2992843ed8",
+      "numberOfInstances" : 1,
+      "defaultNodeMinInstances" : null,
+      "defaultNodeMaxInstances" : null,
+      "roleLimits" : null,
+      "nodeLimits" : null
+    },
+    {
+      "uuid" : "deb830c8-64f9-4a6c-bb91-0b92ff54244f",
+      "modifier" : "add",
+      "workflowUuid" : "39f0c6f3-132a-4f89-99a8-6442a9716888",
+      "numberOfInstances" : 1,
+      "defaultNodeMinInstances" : null,
+      "defaultNodeMaxInstances" : null,
+      "roleLimits" : null,
+      "nodeLimits" : null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "@type" : "deploy/deployment",
+  "assetClass" : "deploy",
+  "assetType" : "deployment",
+  "uuid" : "3849da03-c460-450e-8243-0de3f9881144",
+  "checksum" : "9ee842b149e3ea8723fe5db0086a8b38745214528a901b9c32ccd6ae29ca5067",
+  "name" : "Simple-Kafka-Deployment",
+  "engineConfig" : "9cf2a075-069f-4744-bb36-5d1793d8af15",
+  "schedulerSettings" : "f15bf757-da5c-470c-82f5-b82e0fd24d24"
+}
