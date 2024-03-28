@@ -1,9 +1,8 @@
 {
-  "@type" : "processorOutput/kafka",
+  "@type" : "processorOutput/frame",
   "assetClass" : "processorOutput",
-  "assetType" : "kafka",
+  "assetType" : "frame",
   "uuid" : "138dcc43-f7cc-49ff-9253-44082b3225d1",
-  "checksum" : "3419fcdda63378272b3670f0bf9b053330d6f38ed2a44ee0e3bf0dad5ca8944a",
   "name" : "Kafka-Out",
   "inputPorts" : [
     {
@@ -15,14 +14,40 @@
   ],
   "failureHandling" : { },
   "sinkUuid" : "559bed81-0dfc-4f71-a3f5-ab38dff0c6de",
-  "formatUuid" : "e511ac65-c5e3-436e-9b93-c79f2936d7e8",
-  "routing" : {
-    "@type" : "processorOutput/kafka/routing/table",
-    "noMatchHandling" : "DEFAULT",
-    "defaultDestination" : {
-      "topic" : "\"rpe8sfqa-default\""
-    },
-    "routingRules" : [ ]
+  "adapter" : {
+    "@type" : "processorOutput/frame/adapter/kafka",
+    "adapterType" : "ROUTING",
+    "exclusiveOutput" : null,
+    "routingOutput" : {
+      "noMatchHandling" : "FAILURE",
+      "nonRecoverableErrorHandling" : null,
+      "routingTable" : {
+        "routingRules" : [
+          {
+            "modifier" : "add",
+            "uuid" : "03e90bcf-3095-420e-98fc-637d7c299470",
+            "anchor" : {
+              "relation" : "BEGIN",
+              "base" : null
+            },
+            "name" : "ConvertedDefaultRule",
+            "description" : "Created from default destination",
+            "condition" : {
+              "conditionMode" : "NONE",
+              "conditions" : null
+            },
+            "destination" : {
+              "format" : "902ff2fa-5d8d-4930-8806-419310a60a0b",
+              "topic" : "\"rpe8sfqa-default\"",
+              "partitionHandling" : null,
+              "partition" : null,
+              "keyType" : null,
+              "key" : null
+            }
+          }
+        ]
+      }
+    }
   },
   "isInstance" : false
 }

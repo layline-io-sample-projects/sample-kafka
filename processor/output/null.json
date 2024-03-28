@@ -1,10 +1,14 @@
 {
-  "@type" : "processorOutput/kafka",
+  "@type" : "processorOutput/frame",
   "assetClass" : "processorOutput",
-  "assetType" : "kafka",
+  "assetType" : "frame",
   "uuid" : "266fcb97-0040-41aa-85ad-fd0a9805ec3b",
-  "checksum" : "bacf954d2ff4bcbee770d3810bd10610ae1759718293180e489ca3205ced2415",
   "baseUuid" : "138dcc43-f7cc-49ff-9253-44082b3225d1",
-  "formatUuid" : "902ff2fa-5d8d-4930-8806-419310a60a0b",
+  "adapter" : {
+    "@type" : "processorOutput/frame/adapter/kafka",
+    "adapterType" : null,
+    "exclusiveOutput" : null,
+    "routingOutput" : null
+  },
   "isInstance" : true
 }

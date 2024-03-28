@@ -3,7 +3,6 @@
   "assetClass" : "processorFlow",
   "assetType" : "javaScript",
   "uuid" : "8eeb2520-bb77-4ed3-a420-dcbe86487805",
-  "checksum" : "150a101b1492126fec3794e831754ba82197c66458fbb8e1fbe49a4ae1ca67dd",
   "name" : "MessageLogger",
   "inputPorts" : [
     {
@@ -22,10 +21,6 @@
     }
   ],
   "failureHandling" : { },
-  "scriptLines" : [
-    "function onMessage(message) {",
-    "    stream.logInfo(message.toJson());",
-    "}"
-  ],
+  "rootScript" : "src/main/javascript/MessageLogger/MessageLogger.js",
   "isInstance" : true
 }
